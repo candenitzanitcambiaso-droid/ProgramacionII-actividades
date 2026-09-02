@@ -4,4 +4,6 @@ format: html
 editor: visual
 ---
 
-## 
+```{r}
+library(readr)
+```
