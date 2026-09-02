@@ -35,6 +35,13 @@ glimpse(estacion_NH0910)
 glimpse(estacion_NH0437)
 ```
 
+# Preguntas
+1. Tienen la misma cantidad de columnas y son iguales
+2. Si, en su mayoria son correctos
+3. Hay entre 15553 y 23733 en los de estación y en el de metadatos hay 258 registros
+
+
 ```{r}
 
 ```
+
