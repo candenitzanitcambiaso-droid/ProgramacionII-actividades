@@ -5,5 +5,23 @@ editor: visual
 ---
 
 ```{r}
-library(readr)
+download.file("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/metadatos_completos.csv", "datos/metadatos.csv")
+download.file("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0472.csv", "datos/estacion-NH0472.csv")
+download.file("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0910.csv", "datos/estacion-NH0910.csv")
+download.file("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0046.csv", "datos/estacion-NH0046.csv")
+download.file("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0098.csv", "datos/estacion-NH0098.csv")
+download.file("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0437.csv", "datos/estacion-NH0437.csv")
+```
+
+```{r}
+metadatos <- read.csv("datos/metadatos.csv")
+estacion_NH0472 <- read.csv("datos/estacion-NH0472.csv")
+estacion_NH0910 <- read.csv("datos/estacion-NH0910.csv")
+estacion_NH0046 <- read.csv("datos/estacion-NH0046.csv")
+estacion_NH0098 <- read.csv("datos/estacion-NH0098.csv")
+estacion_NH0437 <- read.csv("datos/estacion-NH0437.csv")
+```
+
+```{r}
+library(dplyr)
 ```
