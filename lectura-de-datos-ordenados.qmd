@@ -34,3 +34,7 @@ glimpse(estacion_NH0472)
 glimpse(estacion_NH0910)
 glimpse(estacion_NH0437)
 ```
+
+```{r}
+
+```
