@@ -35,13 +35,24 @@ glimpse(estacion_NH0910)
 glimpse(estacion_NH0437)
 ```
 
-# Preguntas
-1. Tienen la misma cantidad de columnas y son iguales
-2. Si, en su mayoria son correctos
-3. Hay entre 15553 y 23733 en los de estación y en el de metadatos hay 258 registros
+# Preguntas 4
+
+1.  Tienen la misma cantidad de columnas y son iguales
+2.  Si, en su mayoria son correctos
+3.  Hay entre 15553 y 23733 en los de estación y en el de metadatos hay 258 registros
+
+# Preguntas 
+```{r}
+estacion_completo <- rbind(estacion_NH0046, estacion_NH0098, estacion_NH0437, estacion_NH0472, estacion_NH0910)
+
+estacion_completo |> 
+  group_by(id) |> 
+  summarise(observaciones_temperatura = sum (!is.na(unlist(across(starts_with("temperatura"))))))
+```
 
 
 ```{r}
-
+estacion_completo |> 
+  
 ```
 
