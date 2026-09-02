@@ -25,3 +25,12 @@ estacion_NH0437 <- read.csv("datos/estacion-NH0437.csv")
 ```{r}
 library(dplyr)
 ```
+
+```{r}
+glimpse(metadatos)
+glimpse(estacion_NH0046)
+glimpse(estacion_NH0098)
+glimpse(estacion_NH0472)
+glimpse(estacion_NH0910)
+glimpse(estacion_NH0437)
+```
